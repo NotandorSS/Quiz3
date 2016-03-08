@@ -28,7 +28,13 @@ public class MyTest {
 
 	@Test
 	public void test() {
-		assertTrue(1==1);
+		/*because getPerimeter is used in getArea, only getArea is tested*/
+		Triangle shape1 = new Triangle();
+		Triangle shape2 = new Triangle(3,4,5);
+		assertTrue(shape1.getArea()==.4330127019);
+		assertTrue(shape2.getArea()==6);
+		//Area calc *2
+		//Perimeter calc *2
 	}
 
 }
